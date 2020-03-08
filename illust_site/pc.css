@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+h1 {
+    font-size: 70px;
+    padding: 10px;
+    padding-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+    position: absolute;
+    background-color: #fff;
+    width: 1350px;
+    z-index: 40;
+}
+header img{
+    width: 100px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+nav.NavMenu {
+    position: absolute;
+    
+}
+nav.NavMenu ul{
+    
+}
+nav.NavMenu li{
+    float: right;
+}
+nav.NavMenu a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+nav.NavMenu-PC{
+    width: 100%;
+    height: 10px;
+    background-color: #440a63;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    transition: 0.2s;
+    
+}
+
+nav.NavMenu-PC:hover{
+    height: 110px;
+    transition: 0.2s;
+    background-color: #fff;
+    
+}
+nav.NavMenu-PC ul{
+    display: flex;
+/*        margin-left: 850px;*/
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+nav.NavMenu-PC li{
+    display: block;
+    font-size: 34px;
+    margin: 20px 20px;
+}
+nav.NavMenu-PC a{
+    margin-left: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav.NavMenu-PC a:hover{
+    color: #9998BE;
+    transition: 0.3s;
+}
+
+#sns {
+    width: 100%;
+}
+
+#sns ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sns li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#sns li a {
+    display: block;
+    width: 40px;
+    padding: 3px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.main-visual {
+    width: 100%;
+    height: 800px;
+    background: #fff url(S__83468290.jpg) 0 0 no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.intro {
+    background-color: #85D9C2;
+    margin-top: 70px;
+}
+
+.intro h2 {
+    font-size: 35px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro p {
+    font-size: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.circlecontainer {
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+}
+
+
+.manycircles{
+    width: 100%;
+    margin-bottom: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.manycircles .card img {
+    margin-top: 300px;
+    height: 500px;
+}
+
+
+
+.manycircles .card {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 500px;
+    
+}
+
+.manycircles .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.manycircles .card:hover .img-box {
+    opacity: 0.5;
+}
+
+.manycircles .card .content {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.manycircles .card:hover .content {
+    bottom: 0;
+}
+
+.manycircles .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #ea8d8d, transparent);
+}
+
+.manycircles .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #c6ea8d, transparent);
+}
+
+.manycircles .card .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000000;
+    font-size: 50px;
+    -webkit-text-stroke: .1px #fff;
+    text-stroke: .1px #fff;
+}
+
+.manycircles .card .content p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 41px;
+    -webkit-text-stroke: .2px #fff;
+    text-stroke: 1px #fff;
+}
+
+
+
+
+/*
+.circle1 h3 {
+    margin-left: 410px;
+    padding-top: 140px;
+}
+
+.circle1 p {
+    margin-left: 420px;
+    margin-right: 16px;
+    padding-top: 50px;
+}
+
+.circle2 img {
+    z-index: -3;
+    border: solid 2px #000;
+    position: absolute;
+    margin-left: 20px;
+    height: 680px;
+    top: 70px;
+    left: 400px;
+}
+
+.circle2 {
+    height: 100%;
+    border-radius: 50%;
+    color: #FF5306;
+    background-color: currentColor;
+    margin-left: 20px;
+    margin-right: 160px;
+    margin-top: 210px;
+    z-index: -2;
+    position: relative;
+
+}
+
+.circle2 h3 {
+    margin-left: 150px;
+    padding-top: 140px;
+}
+
+.circle2 p {
+    text-align: right;
+    margin-right: 416px;
+    padding-top: 50px;
+}
+
+.circle3 img {
+    z-index: -3;
+    border: solid 2px #000;
+    position: absolute;
+    margin-left: 20px;
+    height: 680px;
+    top: 70px;
+    left: -160px;
+}
+
+.circle3 {
+    height: 100%;
+    border-radius: 50%;
+    color: #9998BE;
+    background-color: currentColor;
+    margin-left: 160px;
+    margin-right: 20px;
+    margin-top: 210px;
+    z-index: -2;
+    position: relative;
+}
+
+.circle3 h3 {
+    margin-left: 410px;
+    padding-top: 140px;
+}
+
+.circle3 p {
+    margin-left: 410px;
+    margin-right: 16px;
+    padding-top: 50px;
+}
+
+.circle4 img {
+    z-index: -3;
+    border: solid 2px #000;
+    position: absolute;
+    margin-left: 20px;
+    height: 680px;
+    top: 70px;
+    left: 400px;
+}
+
+.circle4 {
+    height: 100%;
+    border-radius: 50%;
+    color: #FF5306;
+    background-color: currentColor;
+    margin-left: 20px;
+    margin-right: 160px;
+    margin-top: 210px;
+    z-index: -2;
+    position: relative;
+}
+
+.circle4 h3 {
+    margin-left: 180px;
+    padding-top: 150px;
+}
+
+.circle4 p {
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 416px;
+}
+*/
+
+
+
+
+.container {
+    position: relative;
+    background-color: #2E726E;
+    margin-top: 300px; 
+    padding: 200px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 400px;
+    grid-gap: 100px;
+}
+
+.container .card {
+    position: relative;
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    opacity: 0.5;
+}
+
+.container .card .img-box img {
+    width: 100%;
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    bottom: 0;
+}
+
+.container .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #92A5A6, transparent);
+}
+
+.container .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #440A63, transparent);
+}
+
+.container .card .content h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000;
+    font-size: 50px;
+}
+
+.container .card .content  p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+}
+
+.container2 {
+    display: flex;
+    align-content: center;
+    width: 80%;
+    margin-left: 135px;
+    flex-flow: row wrap;
+}
+
+.drawing {
+    width: 50%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100fr;
+    grid-template-rows: 900px;
+    grid-gap: 10px;
+}
+
+.drawing img {
+    width: 100%;
+}
+
+
+
+.drawing .card {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.drawing .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.drawing .card:hover .img-box {
+    opacity: 0.5;
+}
+
+.drawing .card .content {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: -100%;
+    padding: 90px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.drawing .card:hover .content {
+    bottom: 0;
+}
+
+.drawing .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #ea8d8d, transparent);
+}
+
+.drawing .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #c6ea8d, transparent);
+}
+
+.drawing .card .content h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000000;
+    font-size: 50px;
+    -webkit-text-stroke: .1px #fff;
+    text-stroke: .1px #fff;
+}
+
+.drawing .card .content p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 40px;
+    -webkit-text-stroke: .2px #fff;
+    text-stroke: 1px #fff;
+}
+
+.methods{
+    background: #9998BE;
+    padding-bottom: 100px;
+}
+ .methodsheader{
+    position: relative;
+}
+ .background{
+    margin-top: 70px;
+     padding-top: 1000px;
+    background: #9998BE;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+ .methodsheader h2{
+    padding-top: 200px;
+    font-size: 80px;
+    position: absolute;
+    display: block;
+/*    padding-left: 300px;*/
+    
+    padding-left: 37%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%)
+}
+
+.thirdsection{
+    margin-top: -300px;
+    font-size: 30px;
+}
+
+.thirdsection p{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.thirdsection a{
+    position: absolute;
+    padding-left: 150px;
+    text-decoration: none;
+    color: #FF5306;
+}
+.thirdsection a:hover{
+    color: #2E726E;
+}
+
+.pictures img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 40px;
+    z-index: 3;
+}
+
+.pictures  p{
+    float: right;
+    margin-top: -450px;
+    font-size: 40px;
+    margin-left:500px;
+    margin-right: 100px;
+}
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
