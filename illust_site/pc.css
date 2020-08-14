@@ -10,13 +10,14 @@ h1 {
     padding: 10px;
     padding-left: 100px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
 }
 
 
 header {
     position: absolute;
     background-color: #fff;
-    width: 1350px;
+    width: 1370px;
     z-index: 40;
 }
 header img{
@@ -26,18 +27,28 @@ header img{
 }
 
 nav.NavMenu {
-    position: absolute;
-    
+    margin-right: 40px;
+    margin-top: -75px;
 }
 nav.NavMenu ul{
     
-}
-nav.NavMenu li{
     float: right;
 }
-nav.NavMenu a{
+nav.NavMenu li{
+    float: left;
     list-style: none;
+    padding-right: 40px;
+    
+}
+nav.NavMenu a{
+    font-size: 35px;
     text-decoration: none;
+    color: black;
+}
+nav.NavMenu a:hover{
+    color: #9998BE;
+    text-shadow: 1px 1px;
+    transition: 0.3s;
 }
 
 
@@ -79,40 +90,26 @@ nav.NavMenu-PC a{
 
 nav.NavMenu-PC a:hover{
     color: #9998BE;
+    text-shadow: 1px 1px;
     transition: 0.3s;
 }
 
-#sns {
-    width: 100%;
-}
-
-#sns ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#sns li {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-
-#sns li a {
-    display: block;
-    width: 40px;
-    padding: 3px;
-    margin-top: 40px;
-    text-decoration: none;
+#sns{
+    display: none;
 }
 
 .main-visual {
     width: 100%;
     height: 800px;
-    background: #fff url(S__83468290.jpg) 0 0 no-repeat;
+    background: #fff url(newsalt2.png) 0 0 no-repeat;
     margin: 0 auto;
     background-size: cover;
 }
+
+::-webkit-scrollbar{
+    display: none;
+    -webkit-appearance: none;
+    }
 
 .intro {
     background-color: #85D9C2;
@@ -131,8 +128,8 @@ nav.NavMenu-PC a:hover{
     font-size: 35px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -183,7 +180,7 @@ nav.NavMenu-PC a:hover{
 .manycircles .card .content {
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 80%;
     bottom: -100%;
     padding: 20px;
     box-sizing: border-box;
@@ -196,12 +193,21 @@ nav.NavMenu-PC a:hover{
 }
 
 .manycircles .card:nth-child(1) .content {
-    background: linear-gradient(0deg, #ea8d8d, transparent);
+    background: linear-gradient(0deg, #440A63, transparent);
 }
 
 .manycircles .card:nth-child(2) .content {
     background: linear-gradient(0deg, #c6ea8d, transparent);
 }
+
+.manycircles .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #440A63, transparent);
+}
+
+.manycircles .card:nth-child(4) .content {
+    background: linear-gradient(0deg, #ea8d8d, transparent);
+}
+
 
 .manycircles .card .content h3 {
     margin: 0 0 10px;
@@ -210,15 +216,17 @@ nav.NavMenu-PC a:hover{
     font-size: 50px;
     -webkit-text-stroke: .1px #fff;
     text-stroke: .1px #fff;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .manycircles .card .content p {
     margin: 0;
     padding: 0;
     color: #000;
-    font-size: 41px;
+    font-size: 28px;
     -webkit-text-stroke: .2px #fff;
     text-stroke: 1px #fff;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 
@@ -379,7 +387,7 @@ nav.NavMenu-PC a:hover{
 .container .card .content {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     bottom: -100%;
     padding: 20px;
     box-sizing: border-box;
@@ -404,6 +412,7 @@ nav.NavMenu-PC a:hover{
     padding: 0;
     color: #000;
     font-size: 50px;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .container .card .content  p {
@@ -411,6 +420,7 @@ nav.NavMenu-PC a:hover{
     padding: 0;
     color: #000;
     font-size: 25px;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .container2 {
@@ -482,10 +492,13 @@ nav.NavMenu-PC a:hover{
 .drawing .card .content h2 {
     margin: 0 0 10px;
     padding: 0;
-    color: #000000;
+    color: darkred;
     font-size: 50px;
+/*
     -webkit-text-stroke: .1px #fff;
-    text-stroke: .1px #fff;
+    text-stroke: 1px #fff;
+*/
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .drawing .card .content p {
@@ -495,11 +508,13 @@ nav.NavMenu-PC a:hover{
     font-size: 40px;
     -webkit-text-stroke: .2px #fff;
     text-stroke: 1px #fff;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+/*
 .methods{
     background: #9998BE;
-    padding-bottom: 100px;
+    padding-bottom: 100px;    
 }
  .methodsheader{
     position: relative;
@@ -516,21 +531,22 @@ nav.NavMenu-PC a:hover{
     font-size: 80px;
     position: absolute;
     display: block;
-/*    padding-left: 300px;*/
+    padding-left: 300px;
     
     padding-left: 37%;
     transform: translateX(-50%);
-    -webkit- transform: translateX(-50%)
+    -webkit- transform: translateX(-50%);
 }
 
 .thirdsection{
-    margin-top: -300px;
-    font-size: 30px;
+    margin-top: -500px;
+    font-size: 40px;
 }
 
 .thirdsection p{
     padding-left: 150px;
     padding-right: 150px;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .thirdsection a{
@@ -538,6 +554,7 @@ nav.NavMenu-PC a:hover{
     padding-left: 150px;
     text-decoration: none;
     color: #FF5306;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 .thirdsection a:hover{
     color: #2E726E;
@@ -559,6 +576,37 @@ nav.NavMenu-PC a:hover{
     margin-left:500px;
     margin-right: 100px;
 }
+*/
+
+#snsPC {
+    text-align: center;
+    padding: 40px;
+    background-color: snow;
+}
+#snsPC p{
+    font-size: 15px;
+}
+
+#snsPC ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#snsPC li {
+    display: inline-block;
+}
+
+#snsPC li a {
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#snsPC li a img{
+    height: 60px;
+}
+
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;

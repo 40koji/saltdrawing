@@ -14,7 +14,9 @@ h1 {
 
 
 header {
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }
 header img{
     width: 60px;
@@ -23,7 +25,7 @@ header img{
 }
 .menu{
     position: fixed;
-    right: 13%;
+    right: 4%;
     top: 4%;
     z-index: 9999;
 }
@@ -84,7 +86,7 @@ nav.NavMenu ul li a {
     margin-top: 110px;
     margin-bottom: 110px;
     text-decoration: none;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav.NavMenu.active {
@@ -113,21 +115,21 @@ nav.NavMenu.active {
     width: 70%;
     right: 15px;
     left: 14px;
-    height: 10px;
+    height: 8px;
     background-color: white;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .menu-trigger span:nth-of-type(1) {
-    top: 15px;
+    top: 16px;
 }
 
 .menu-trigger span:nth-of-type(2) {
-    top: 33px;
+    top: 36px;
 }
 
 .menu-trigger span:nth-of-type(3) {
-    bottom: 10px;
+    bottom: 11px;
 }
 
 .menu-trigger.active span:nth-of-type(1) {
@@ -210,9 +212,13 @@ ul {
 .main-visual {
     width: 85%;
     height: 550px;
-    background: #fff url(S__75743242.jpg) 0 0 no-repeat;
+    background: #fff url(newsalt.png) 0 0 no-repeat;
     background-size: cover;
 }
+
+::-webkit-scrollbar{
+    display: none;
+    }
 
 .intro {
     background-color: #85D9C2;
@@ -236,9 +242,16 @@ ul {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-.circlecontainer {
-    width: 100%;
-    height: 800px;
+h3 {
+    color: #000;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: #000;
+    font-size: 15px;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .circle1 img {
@@ -262,30 +275,21 @@ ul {
     position: relative;
 }
 
-h3 {
-    color: #000;
-    font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-p {
-    color: #000;
-    font-size: 15px;
-
-}
 
 .circle1 h3 {
 float: right;
     padding-right: 20%;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .circle1 p {
-    padding-left: 50%;
-    margin-right: 1%;
-    padding-top: 30%;
+    padding-left: 53%;
+    margin-right: 10%;
+    padding-top: 25%;
 }
-
+.circle1 .content{
+    padding-bottom: 50px;
+}
 .circle2 img {
     z-index: -3;
     border: solid 2px #000;
@@ -310,14 +314,17 @@ float: right;
 
 .circle2 h3 {
     margin-left: 13%;
-    padding-top: 17%;
+    padding-top: 15%;
 }
 
 .circle2 p {
     text-align: right;
     margin-left: 1%;
-    padding-right: 48%;
+    padding-right: 51%;
     padding-top: 5%;
+}
+.circle2 .content{
+    padding-bottom: 40px;
 }
 
 .circle3 img {
@@ -327,7 +334,7 @@ float: right;
     margin-left: 40%;
     height:250px;
     top: 15%;
-    left: -40%;
+    left: -43%;
 }
 
 .circle3 {
@@ -344,15 +351,17 @@ float: right;
 .circle3 h3 {
     float: right;
     padding-right: 17%;
-    padding-top: 15%;
+    padding-top: 13%;
 }
 
 .circle3 p {
-    padding-left: 50%;
+    padding-left: 52%;
     margin-right: 1%;
     padding-top: 30%;
 }
-
+.circle3 .content{
+    padding-bottom: 30px;
+}
 .circle4 img {
     z-index: -3;
     border: solid 2px #000;
@@ -368,7 +377,7 @@ float: right;
     border-radius: 50%;
     color: #FF5306;
     background-color: currentColor;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-top: 56%;
     z-index: -2;
     position: relative;
@@ -376,43 +385,68 @@ float: right;
 
 .circle4 h3 {
     margin-left: 20%;
-    padding-top: 17%;
+    padding-top: 14%;
 }
 
 .circle4 p {
     text-align: right;
     margin-left: 1%;
-    padding-right: 48%;
+    padding-right: 54%;
     padding-top: 5%;
 }
 
-.container {
-    position: relative;
-    background-color: #2E726E;
-    margin-top: 1400px;
-    padding: 23px;
-    display: grid;
-    grid-template-columns: 9fr 9fr;
-    grid-template-rows: 150px;
-    grid-gap: 20px;
+.circle4 .content{
+    padding-bottom: 10px;
 }
+
+.container {
+    background-color: #2E726E;
+    margin-top: 120px;
+    
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.gridItem {
+	height: 100%;
+    width: 100%;
+	color: #ccc;
+}
+
+.gridB {
+	height: 100%;
+    width: 100%;
+}
+
+.gridC {
+	height: 100%;
+    width: 100%;
+}
+
+.gridD {
+	height: 100%;
+    width: 100%;
+}
+
 
 .container .card {
     position: relative;
-    background: #ccc;
     overflow: hidden;
+    background-color: #ccc;
     border-radius: 10px;
     transition: 0.5s;
 }
 
 .container .card .img-box {
-    position: absolute;
+   
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     transition: 0.5s;
 }
+
 
 .container .card:hover .img-box {
     opacity: 0.5;
@@ -480,8 +514,6 @@ float: right;
     width: 100%;
 }
 
-
-
 .drawing .card {
     position: relative;
     background: #fff;
@@ -543,59 +575,100 @@ float: right;
     text-stroke: 1px #fff;
 }
 
-.methods{
-    background: #9998BE;
-    padding-bottom: 200px;
+/*    .methods{
+        background: #9998BE;
+        padding-bottom: 200px;
+    }
+     .methodsheader{
+        position: relative;
+    }
+     .background{
+        margin-top: 70px;
+        padding-bottom: 400px;
+        background: #9998BE;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+     .methodsheader h2{
+        padding-top: 90px;
+        font-size: 60px;
+        position: absolute;
+        display: block;
+        padding-left: 300px;
+        left: 13%;
+        transform: translateX(-50%);
+        -webkit- transform: translateX(-50%)
+
+    }
+
+    .methods img{
+        height: 320px;
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .methods p{
+        float: right;
+    }
+
+    .thirdsection p{
+        font-size: 25px;
+        margin-top: -200px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .thirdsection a{
+        font-size: 20px;
+        margin-top: -30px;
+        text-decoration: none;
+        color: #2E726E;
+        margin-left: 26px;
+    }
+    .thirdsection a:hover{
+        color: #FF5306;
+    }
+
+    .pictures p{
+        float: right;
+        padding-left: 200px;
+        margin-top: -200px;
+    }
+/*
+#snsPC{
+    display: none;
 }
- .methodsheader{
-    position: relative;
+*/
+#snsPC {
+    text-align: center;
+    background-color: snow;
 }
- .background{
-    margin-top: 70px;
-    padding-bottom: 400px;
-    background: #9998BE;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-}
- .methodsheader h2{
-    padding-top: 90px;
-    font-size: 60px;
-    position: absolute;
-    display: block;
-/*    padding-left: 300px;*/
-    left: 13%;
-    transform: translateX(-50%);
-    -webkit- transform: translateX(-50%)
-        
+#snsPC p{
+    font-size: 15px;
+    padding-top: 80px;
+    text-align: center;
 }
 
-.methods img{
-    height: 320px;
-    display: flex;
-    margin-top: 100px;
+#snsPC ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 30px;
+    padding-right: 132.5px;
 }
 
-.methods p{
-    float: right;
+#snsPC li {
+    display: inline-block;
 }
 
-.thirdsection p{
-    font-size: 25px;
-    margin-top: -200px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.thirdsection a{
-    font-size: 20px;
-    margin-top: -30px;
+#snsPC li a {
     text-decoration: none;
-    color: #2E726E;
-    margin-left: 26px;
-}
-.thirdsection a:hover{
-    color: #FF5306;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
+#snsPC li a img{
+    height: 40px;
+}
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
